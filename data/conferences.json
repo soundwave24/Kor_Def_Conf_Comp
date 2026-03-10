@@ -1,0 +1,55 @@
+{
+  "lastUpdated": "2026-03-10",
+  "conferences": [
+    {
+      "id": "kdsa-2026",
+      "name": "KDSA 2026",
+      "fullName": "Korea Defense Science & Technology Annual Conference 2026",
+      "description": "Annual conference covering defense systems, cybersecurity, and emerging technologies in the Korean defense sector.",
+      "url": "https://example.com/kdsa2026",
+      "downloadUrl": "https://example.com/kdsa2026/cfp.pdf",
+      "location": "Seoul, South Korea",
+      "dates": "2026-09-15 ~ 2026-09-17",
+      "deadlines": [
+        {
+          "type": "Abstract Registration",
+          "date": "2026-05-15T23:59:00+09:00"
+        },
+        {
+          "type": "Paper Submission",
+          "date": "2026-06-01T23:59:00+09:00"
+        },
+        {
+          "type": "Notification",
+          "date": "2026-07-15T23:59:00+09:00"
+        },
+        {
+          "type": "Camera Ready",
+          "date": "2026-08-01T23:59:00+09:00"
+        }
+      ],
+      "acceptedPapers": []
+    },
+    {
+      "id": "add-2026",
+      "name": "ADD Symposium 2026",
+      "fullName": "Agency for Defense Development Annual Symposium 2026",
+      "description": "Symposium on advanced defense technologies including AI, autonomous systems, and cyber defense.",
+      "url": "https://example.com/add2026",
+      "downloadUrl": "https://example.com/add2026/cfp.pdf",
+      "location": "Daejeon, South Korea",
+      "dates": "2026-11-10 ~ 2026-11-12",
+      "deadlines": [
+        {
+          "type": "Paper Submission",
+          "date": "2026-07-20T23:59:00+09:00"
+        },
+        {
+          "type": "Notification",
+          "date": "2026-09-01T23:59:00+09:00"
+        }
+      ],
+      "acceptedPapers": []
+    }
+  ]
+}

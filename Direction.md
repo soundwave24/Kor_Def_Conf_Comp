@@ -1,0 +1,13 @@
+# Direction
+- This project is that we will create a new homepage for Defense Conference. 
+- This homepage includes:
+  - A summary of the Defense Conference (Description and Download Link).
+  - Deadline for submission of papers.
+    - This is countdown timer, so it will automatically update every day.
+  - A list of accepted papers as links to the papers.
+- Goal: Whenever someone wants to know about the Defense Conference, they can easily find all the information on this homepage.
+- Refences:
+  - https://sec-deadlines.github.io/
+- How to work:
+  - we will use GitHub Pages to host the homepage.
+  - I'll update the homepage every week with the latest information about the Defense Conference using Claude.
