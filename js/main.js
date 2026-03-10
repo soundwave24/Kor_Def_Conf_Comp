@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
       renderCountdowns(data.conferences);
       renderConferences(data.conferences);
       renderFooter(data.lastUpdated);
-      setInterval(() => renderCountdowns(data.conferences), 60000);
+      setInterval(() => renderCountdowns(data.conferences), 1000);
     })
     .catch(err => {
       console.error('Failed to load conference data:', err);
@@ -19,13 +19,14 @@ function getTimeRemaining(deadline) {
   const end = new Date(deadline);
   const diff = end - now;
 
-  if (diff <= 0) return { total: 0, days: 0, hours: 0, minutes: 0, passed: true };
+  if (diff <= 0) return { total: 0, days: 0, hours: 0, minutes: 0, seconds: 0, passed: true };
 
   const days = Math.floor(diff / (1000 * 60 * 60 * 24));
   const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
   const minutes = Math.floor((diff / (1000 * 60)) % 60);
+  const seconds = Math.floor((diff / 1000) % 60);
 
-  return { total: diff, days, hours, minutes, passed: false };
+  return { total: diff, days, hours, minutes, seconds, passed: false };
 }
 
 function getUrgencyClass(remaining) {
@@ -80,6 +81,8 @@ function renderCountdowns(conferences) {
               <div class="time-unit"><span class="number">${String(remaining.hours).padStart(2, '0')}</span><span class="label">Hrs</span></div>
               <span class="time-separator">:</span>
               <div class="time-unit"><span class="number">${String(remaining.minutes).padStart(2, '0')}</span><span class="label">Min</span></div>
+              <span class="time-separator">:</span>
+              <div class="time-unit"><span class="number">${String(remaining.seconds).padStart(2, '0')}</span><span class="label">Sec</span></div>
             </div>`
         }
       </div>
